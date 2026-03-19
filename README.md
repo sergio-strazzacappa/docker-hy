@@ -1,6 +1,20 @@
-# Curso de Devops con Docker de la universidad de Helsinky
+# Curso de Devops con Docker de la universidad de Helsinki
 
 ## Comandos
+
+### Dockerfile
+
+#### Construir una imagen
+
+- -f: Agrega un nombre de archivo para el Dockerfile
+
+```bash
+$ docker image build -t <nombre-imagen> <contexto>
+```
+
+```bash
+$ docker build -t <nombre-imagen> <contexto>
+```
 
 ### Imagen
 
@@ -22,6 +36,12 @@ $ docker image rm <nombre-imagen>
 $ docker image prune
 ```
 
+#### Buscar una imagen
+
+```bash
+$ docker search <término>
+```
+
 #### Descargar una imagen
 
 ```bash
@@ -30,6 +50,16 @@ $ docker image pull <nombre-imagen>
 
 ```bash
 $ docker pull <nombre-imagen>
+```
+
+#### Crear un nuevo tag referenciando otra imagen
+
+```bash
+$ docker image tag <src:tag> <dst:tag>
+```
+
+```bash
+$ docker tag <src:tag> <dst:tag>
 ```
 
 ### Contenedor
@@ -164,6 +194,36 @@ $ docker container exec <nombre-contenedor> <comando>
 
 ```bash
 $ docker exec <nombre-contenedor> <comando>
+```
+
+#### Copiar archivos entre el filesystem local y un contenedor
+
+```bash
+$ docker container cp <src> <dst>
+```
+
+```bash
+$ docker cp <src> <dst>
+```
+
+#### Ver la diferencia de los archivos en un contenedor
+
+```bash
+$ docker container diff <nombre-contenedor>
+```
+
+```bash
+$ docker diff <nombre-contenedor>
+```
+
+#### Crea una nueva imagen a partir de un contenedor
+
+```bash
+$ docker container commit <nombre-contenedor> <nombre-imagen>
+```
+
+```bash
+$ docker commit <nombre-contenedor> <nombre-imagen>
 ```
 
 #### Eliminar un contenedor
