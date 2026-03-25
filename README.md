@@ -69,6 +69,8 @@ $ docker tag <src:tag> <dst:tag>
     - -t: tty
     - -d: detached
     - --rm: remove
+    - -v: attach a volume or a bind mount
+    - -p: connect a port in the host to a port in a container
 
 #### Ejecutar un contenedor desde una imagen
 
