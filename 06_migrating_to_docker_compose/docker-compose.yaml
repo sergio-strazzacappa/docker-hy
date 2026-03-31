@@ -1,0 +1,12 @@
+services:
+  yt-dlp-ubuntu:
+    image: yt-dlp:v1
+    build: .
+    volumes:
+      - .:/mydir
+    container_name: yt-dlp
+
+  nginx:
+    image: nginx:1.29
+  database:
+    image: postgres:18

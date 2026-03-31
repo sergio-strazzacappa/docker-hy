@@ -243,3 +243,50 @@ $ docker rm
 ```bash
 $ docker container prune
 ```
+
+### Docker Compose
+
+`Docker compose` necesita de un archivo .yaml o .yaml que lee para ejecutar sus
+instrucciones
+
+#### Construir servicios
+
+```bash
+$ docker compose build
+```
+
+#### Subir un conjunto de servicios de imagenes a un registry
+
+```bash
+$ docker compose push
+```
+
+#### Ejecutar un servicio
+
+```bash
+$ docker compose run <nombre-servicio>
+```
+
+#### Crea y ejecuta los contenedores
+
+```bash
+$ docker compose up
+```
+
+### Detiene y elimina los servicios
+
+```bash
+$ docker compose down
+```
+
+### Inspecciona los logs de los contenedores
+
+```bash
+$ docker compose logs
+```
+
+### Lista los servicios
+
+```bash
+$ docker compose up
+```

@@ -26,7 +26,7 @@ const PostgresConnection = () => {
   return (
     <>
       <div>
-        <Input 
+        <Input
           variant="outlined"
           id="message"
           placeholder="Write message here"

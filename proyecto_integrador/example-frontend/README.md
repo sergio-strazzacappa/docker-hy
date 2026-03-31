@@ -6,7 +6,7 @@ This project is created to help learn docker configurations for frontend project
 
 # Prerequisites
 
-Install [node](https://nodejs.org/en/download/). 
+Install [node](https://nodejs.org/en/download/).
 
 Example node install instructions for LTS node 16.x:
 ```
@@ -36,5 +36,5 @@ Test that the project is running by going to <http://localhost:5001>
 
 ## Exercise 1.14 -> to connect to backend
 
-By default, the expected path to backend is /api. This is where the application will send requests. 
+By default, the expected path to backend is /api. This is where the application will send requests.
 To manually configure API path, build with `REACT_APP_BACKEND_URL` environment value set, for example `REACT_APP_BACKEND_URL=http://example.com npm run build`
