@@ -2,6 +2,8 @@ services:
   backend:
     image: backend:v1
     build: ./example-backend
+    environment:
+      - REDIS_HOST=redis
     ports:
       - "8080:8080"
 
@@ -10,3 +12,6 @@ services:
     build: ./example-frontend
     ports:
       - "5001:5001"
+
+  redis:
+    image: redis

@@ -273,20 +273,26 @@ $ docker compose run <nombre-servicio>
 $ docker compose up
 ```
 
-### Detiene y elimina los servicios
+#### Escala la cantidad de instancias de un servicio
+
+```bash
+$ docker compose up --scale <nombre-servicio>=<instancias>
+```
+
+#### Detiene y elimina los servicios
 
 ```bash
 $ docker compose down
 ```
 
-### Inspecciona los logs de los contenedores
+#### Inspecciona los logs de los contenedores
 
 ```bash
 $ docker compose logs
 ```
 
-### Lista los servicios
+#### Lista los servicios
 
 ```bash
-$ docker compose up
+$ docker compose ps
 ```
