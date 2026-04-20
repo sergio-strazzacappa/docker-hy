@@ -1,3 +1,4 @@
 *.mkv
 *.webm
 /db
+/node_modules
