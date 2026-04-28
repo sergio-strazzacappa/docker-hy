@@ -1,4 +1,4 @@
 *.mkv
 *.webm
-/db
-/node_modules
+db/
+node_modules/
