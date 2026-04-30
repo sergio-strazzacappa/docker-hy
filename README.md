@@ -62,6 +62,12 @@ $ docker image tag <src:tag> <dst:tag>
 $ docker tag <src:tag> <dst:tag>
 ```
 
+#### Ver el historial
+
+```bash
+$ docker image history <nombre-imagen>
+```
+
 ### Contenedor
 
 - docker run
